@@ -4,3 +4,4 @@
 dist
 go-build-sh
 build.sh
+gobuildsh
