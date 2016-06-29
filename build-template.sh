@@ -46,6 +46,10 @@ all(){
     darwin    
 }
 
+just_build(){
+    go build -o {{ .Name }}
+}
+
 case "$1" in
 all)
     all    
@@ -59,9 +63,13 @@ linux)
 darwin)
     darwin
     ;;
-*)
+-h|help|h|H|-H)
     echo $"Usage: $0 {all|windows|darwin|linux}"
     exit 1
+    ;;
+*)
+    just_build()
+    ;;
 esac
 
 exit 0

@@ -5,8 +5,10 @@ you can use `go-build-sh <go-excute-name>` to render a build.sh
 
 And then you can do this to build your go application:
 ```
-./build.sh all
-./build.sh windows
-./build.sh linux
-./build.sh osx
+./build.sh all      # build all ( windows, linux, darwin )
+./build.sh windows  # build windows
+./build.sh linux    # build linux
+./build.sh darwin   # build darwin
+./build.sh          # just build default platform
+./build.sh help     # for cmd help
 ``` 
