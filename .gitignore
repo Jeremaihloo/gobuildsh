@@ -1,0 +1,6 @@
+# vscode
+.vscode
+
+dist
+go-build-sh
+build.sh
